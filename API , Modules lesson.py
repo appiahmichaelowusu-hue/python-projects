@@ -15,8 +15,10 @@ data = response.json()
 temp = data['current_condition'][0]['temp_C']
 description = data['current_condition'][0]['weatherDesc'][0]['value']
 humidity = data['current_condition'][0]['humidity']
+visibility= data['current_condition'][0]['visibility']
 
 print(f"City: {city}")
 print(f"Temperature: {temp}°C")
 print(f"Weather: {description}")
 print(f"Humidity: {humidity}%")
+print(f"Visibility: {visibility} km")
