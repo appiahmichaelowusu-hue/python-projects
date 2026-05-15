@@ -27,7 +27,7 @@ if client_type.lower() == "curious" and  ("what" in client_concern.lower() or "h
      message=message_template[0]
 elif client_type.lower() == "interested" and  ("what " in client_concern.lower() or "how" in client_concern.lower()):
     message=message_template[1]
-elif client_type.lower() == "ready to buy" and  ("I am " in client_concern.lower() or "what is " in client_concern.lower() or "payment" in client_concern.lower()):
+elif client_type.lower() == "ready to buy" and  ("i am " in client_concern.lower() or "what is " in client_concern.lower() or "payment" in client_concern.lower()):
     message=message_template[2]
 else:
     message="Sorry, I don't have an answer to that question. Please contact our support team for further assistance."

@@ -1,4 +1,5 @@
 import datetime
+past_entries = []
 while True:
     print("\n1. Write new entry")
     print("2. View all entries")
@@ -10,6 +11,7 @@ while True:
         chapter=input("Enter the chapter title: ").title()
         content=input("Enter the content for the chapter: ")
         current_date=datetime.datetime.now()
+        past_entries.append(chapter)
         with open("journal.txt", "a") as file:              
             file.write(f"Chapter: {chapter}\n")
             file.write(f"Content: {content}\n")
