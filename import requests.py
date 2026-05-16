@@ -1,7 +1,5 @@
-import requests
+import sys
 
-response = requests.get("https://itunes.apple.com/search?entity=song&limit=1&term=jack+johnson")
-data=response.json()
-print(data["results"][0]["trackName"])
-print(data["results"][0]["artistName"])
-print(data["results"][0]["trackNumber"])
+name=sys.argv[1]
+age=sys.argv[2]
+print(f"Hello, {name}! You are {age} years old.")
