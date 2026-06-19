@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Greeting</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div class="greeting-box">
+            <h1>Hello {{ name }}!</h1>
+            <p>Welcome to our Flask app</p>
+            <a href="/form">Go back</a>
+        </div>
+    </body>
+</html>
