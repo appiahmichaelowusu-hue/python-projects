@@ -5,9 +5,10 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     </head>
     <body>
-        <h1>Enter your name</h1>
+        <h1>Enter your name and phone number</h1>
         <form action="/greet" method="post">
             <input type="text" name="username" placeholder="Your name">
+            <input type="text" name="phone" placeholder="Your phone number">
             <button type="submit">Submit</button>
         </form>
     </body>
